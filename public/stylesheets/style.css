@@ -17,21 +17,32 @@ header{
 	height: 7%;
 	min-width: 800px;
 	min-height: 60px;
-	border-radius: 10px;
+	border-bottom: 40px;
+	border-color: #FFFFFF;
+	display: block; 
+	border-bottom: 2px solid #585858;
 
 	/****************** CAMBIAR COLOR **************/
-	background-color: black;
+	/*background-color: black;*/
+	/*border-radius: 10px;*/
 }
+
 
 #logo{
 	margin-left: 3.5%;
 	float: left;
+	margin-top: 25px;
+	font-style: bold;
+	color: #585858;
+	font-size: 25px;
+	font-style: bold;
+
 }
 
 #logo img{
-	margin-top: 25px;
+	margin-top: 0px;
 	width: 200px;
-	height: 65px;
+	height: 90px;
 }
 
 nav{
@@ -59,11 +70,11 @@ nav ul li a{
 	text-decoration: none;
     padding: 8px 8px 8px 8px;
     /****************** CAMBIAR COLOR **************/
-    color: #66FF99;
+    color: #585858;
 }
 
 nav ul li a:hover{
-	color: #99FFFF;
+	background-color: #ffe766;
 }
 
 #container{
@@ -103,10 +114,13 @@ nav ul li a:hover{
 /**************************** Welcome *****************************/
 
 #welcome{
+
 	text-align: center;
 	font-size: 30px;
-	color: #04B486;
+	font-style: bold;
+	color: #585858;
 }
+
 
 /******************************************************************/
 /******************************************************************/
