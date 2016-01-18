@@ -92,7 +92,7 @@ exports.create = function (req, res) {
 			fs.writeFile(newURL, caratula.buffer, 'binary', function(err) {
 		    	if(err) {
 		    	    console.log("ERROR AL GUARDAR LA CARATULA"+err);
-		    	    var imagesURL = '/images/iconodisco.jpg';
+		    	    var imagesURL = '/images/iconodisco.png';
 					caratulaURL = imagesURL;
 		    	}else{
 		    		console.log("CARATULA GUARDADA");
@@ -101,7 +101,7 @@ exports.create = function (req, res) {
 			}); 
 		}
 	}else{ // no hay imagen
-		var imagesURL = '/images/iconodisco.jpg';
+		var imagesURL = '/images/iconodisco.png';
 		caratulaURL = imagesURL;
 	}
 	/**************/
@@ -211,7 +211,7 @@ exports.destroy = function (req, res) {
 			//encontrada. Borramos.
 			//borramos la imagen
 			//si la imagen es la de por defecto, no la borro
-			if (track.image !== '/images/iconodisco.jpg'){
+			if (track.image !== '/images/iconodisco.png'){
 				var fs = require('fs');
 				var filePath = './public'+track.image ; 
 				fs.unlinkSync(filePath);
